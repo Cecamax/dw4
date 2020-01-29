@@ -1,0 +1,33 @@
+p::first-letter{
+	font-weight: bold;
+	color: #b30b0b;
+	font-size: 40px;
+}
+p::first-line{
+	color: #b30b0b;
+	font-weight: bold;
+}  
+
+p::selection{
+	background-color: aqua;
+	color: #FFF;
+}
+
+#section #alpha, #section #beta{
+	background-color: #FF6;
+	padding: 10px;
+	margin: 20px 0;
+}
+
+#section #alpha::after{
+	content:" + new CSS text";
+	color: #666;
+	font-weight: bold;
+}
+
+#section #beta::before{
+	content: "Second element: ";
+	color: #b30b0b;
+	font-weight: bold;
+	font-size: 20px;
+}
