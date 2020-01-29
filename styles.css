@@ -30,4 +30,41 @@ p::selection{
 	color: #b30b0b;
 	font-weight: bold;
 	font-size: 20px;
+	/*position: absolute;
+	top: 500px;*/
+}
+
+#section-two a{
+	display: block;
+	text-decoration: none;
+	color: #b30b0b;
+	font-weight: bold;
+	margin: 5px;
+	padding: 10px;
+	font-size: 25px;
+	transition: 250ms ease-in-out all;
+}
+#section-two a:hover{
+	color: #2ea3f2;
+	
+}
+#section-two a[href*="https://"]::after{
+	content: "[External Link]";
+	font-size: 18px;
+	color: #808080;
+	text-transform: uppercase;
+}
+#section-two a[href*="https://"]:hover::after{
+	content: " [" attr(href) "] ";
+}
+
+:root{
+	--body-background: #eee;
+	--body-border: 1px solid #000;
+	
+}
+body{
+	background-color: var (--body-background);
+	border: var (--body-border);
+	padding: var (--body-padding);
 }
